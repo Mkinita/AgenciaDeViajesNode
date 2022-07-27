@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider 
+    .slider   
+        h1 Rio de janeiro 
+        em Aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit  eros sed eleifend imperdiet. Nunc hendrerit eros sed eleifend imperdiet. Nunc hendrerit.
+                p Integer tempusmauris efficitur, accumsan nulla at, dapibus est. Aenean et porta sem, at d accumsan nulla at, dapibus est. Aenean et porta sem, at dapibus tortor. Proin feugiat scelerisque ante, quis cursus neque vulputate eget. Nam cursus nisi non odio finibus facilisis. Nulla sed euismod magna. Sed rutrum urna ex, ut consequat diam fringilla eu. Nam eget suscipit nulla. Nullam diam erat, dapibus in lorem sed.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento  
+        .container  
+            .row 
+                .col-md-6
+                    .contenido  
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Sepetiembre 2022 - 28 de Marzo de 2022
+                        p.precio $2.500 USD
+
+
+    .container
+        h2.mt-5.text-center Testimoniales 
+        include ./layout/bloque_testimoniales
